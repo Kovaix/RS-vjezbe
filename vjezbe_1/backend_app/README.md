@@ -1,6 +1,6 @@
 # Backend
 
-URL: https://UPISI-URL.onrender.com
+URL: https://rs-vjezbe-trap.onrender.com
 
 Pokretanje lokalno:
 
@@ -21,6 +21,6 @@ GET /narudzbe
 Primjer curl:
 
 ```
-curl https://UPISI-URL.onrender.com/jela
-curl -X POST https://UPISI-URL.onrender.com/narudzbe -H "Content-Type: application/json" -d "{\"jelo_id\": 1, \"kolicina\": 2}"
+curl https://rs-vjezbe-trap.onrender.com/jela
+curl -X POST https://rs-vjezbe-trap.onrender.com/narudzbe -H "Content-Type: application/json" -d "{\"jelo_id\": 1, \"kolicina\": 2}"
 ```

@@ -1,4 +1,4 @@
-const API_URL = "https://UPISI-URL-BACKENDA.onrender.com";
+const API_URL = "https://rs-vjezbe-trap.onrender.com";
 
 async function ucitajJela() {
   const res = await fetch(API_URL + "/jela");
