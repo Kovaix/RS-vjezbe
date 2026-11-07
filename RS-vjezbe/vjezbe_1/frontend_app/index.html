@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="hr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Restoran – RS Vježba 1</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Restoran „Kod Raspodijeljenih"</h1>
+    <p class="podnaslov">Raspodijeljeni sustavi – Vježba 1 · klijent (ovaj frontend) ↔ poslužitelj (FastAPI na Renderu)</p>
+    <p id="status-api" class="status">Provjeravam vezu s poslužiteljem…</p>
+  </header>
+
+  <main>
+    <section>
+      <div class="naslov-sekcije">
+        <h2>Jelovnik</h2>
+        <select id="filter-kategorija">
+          <option value="">Sve kategorije</option>
+          <option value="predjelo">Predjela</option>
+          <option value="glavno jelo">Glavna jela</option>
+          <option value="desert">Deserti</option>
+        </select>
+      </div>
+      <ul id="jelovnik" class="lista"></ul>
+    </section>
+
+    <section>
+      <h2>Narudžbe</h2>
+      <ul id="narudzbe" class="lista"></ul>
+    </section>
+
+    <section>
+      <h2>Zapisnik HTTP zahtjeva</h2>
+      <p class="pomoc">Svaki zahtjev koji ovaj klijent pošalje poslužitelju i status koji dobije natrag.</p>
+      <ul id="zapisnik"></ul>
+    </section>
+  </main>
+
+  <!-- config.js mora biti prije app.js jer app.js koristi API_URL -->
+  <script src="config.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>

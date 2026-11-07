@@ -1,0 +1,17 @@
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+.env
+
+# Node (za buduće vježbe)
+node_modules/
+dist/
+build/
+
+# OS / editori
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
