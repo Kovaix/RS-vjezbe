@@ -24,3 +24,5 @@ Primjer curl:
 curl https://rs-vjezbe-trap.onrender.com/jela
 curl -X POST https://rs-vjezbe-trap.onrender.com/narudzbe -H "Content-Type: application/json" -d "{\"jelo_id\": 1, \"kolicina\": 2}"
 ```
+
+Screenshotovi testiranja (curl i Postman) su u folderu `vjezbe_1/screenshotovi`.
