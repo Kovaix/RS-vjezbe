@@ -1,15 +1,6 @@
-# Vježba 1 – Klijent-poslužitelj arhitektura na HTTP-u
+# Vježba 1
 
-Raspodijeljeni sustavi 2026/2027
+Frontend (statična stranica) i backend (FastAPI), oba deployana na Render.
 
-| Dio | Tehnologija | Render tip | URL |
-|---|---|---|---|
-| `frontend_app/` (klijent) | HTML/CSS/JS | Static Site | https://UPISI-SVOJ-URL.onrender.com |
-| `backend_app/` (poslužitelj) | Python, FastAPI | Web Service | https://UPISI-SVOJ-URL.onrender.com |
-
-```
-Preglednik ──GET index.html──▶ Render Static Site (frontend_app)
-    │
-    └──fetch(): GET /jelovnik, POST /narudzbe…──▶ Render Web Service (backend_app, FastAPI)
-                                    ◀── JSON + HTTP status (200, 201, 404…)
-```
+- frontend_app: https://UPISI-URL.onrender.com
+- backend_app: https://UPISI-URL.onrender.com

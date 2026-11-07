@@ -1,50 +1,18 @@
-:root {
-  --pozadina: #f6f3ee;
-  --kartica: #ffffff;
-  --tekst: #1f2328;
-  --blijedo: #6b6f76;
-  --naglasak: #b4441f;
-  --ok: #2f7d4f;
-  --greska: #b42318;
-  --rub: #e3ddd3;
-}
-
-* { box-sizing: border-box; }
-
 body {
-  margin: 0;
-  font-family: system-ui, -apple-system, "Segoe UI", sans-serif;
-  background: var(--pozadina);
-  color: var(--tekst);
-  line-height: 1.5;
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 30px auto;
+  padding: 0 15px;
 }
 
-header, main { max-width: 760px; margin: 0 auto; padding: 0 20px; }
-header { padding-top: 40px; }
-h1 { margin: 0; font-size: 1.9rem; }
-h2 { font-size: 1.15rem; margin: 0 0 12px; }
-.podnaslov, .pomoc { color: var(--blijedo); margin: 4px 0; font-size: 0.92rem; }
+li {
+  margin-bottom: 5px;
+}
 
-.status { display: inline-block; margin-top: 12px; padding: 6px 12px; border-radius: 6px; background: var(--rub); font-size: 0.9rem; }
-.status.ok { background: #e3f1e8; color: var(--ok); }
-.status.greska { background: #fbe7e5; color: var(--greska); }
+input {
+  width: 60px;
+}
 
-section { background: var(--kartica); border: 1px solid var(--rub); border-radius: 10px; padding: 20px; margin: 24px 0; }
-.naslov-sekcije { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
-
-.lista { list-style: none; margin: 0; padding: 0; }
-.lista li { display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 10px 0; border-bottom: 1px solid var(--rub); }
-.lista li:last-child { border-bottom: none; }
-.lista .prazno { color: var(--blijedo); }
-.oznaka { margin-left: 8px; font-size: 0.78rem; color: var(--blijedo); }
-.desno { display: flex; align-items: center; gap: 10px; white-space: nowrap; }
-
-input[type="number"] { width: 56px; padding: 5px; border: 1px solid var(--rub); border-radius: 6px; }
-select { padding: 6px; border: 1px solid var(--rub); border-radius: 6px; background: white; }
-button { padding: 6px 14px; border: none; border-radius: 6px; background: var(--naglasak); color: white; cursor: pointer; font: inherit; }
-button:hover { filter: brightness(1.1); }
-button.sekundarni { background: transparent; color: var(--greska); border: 1px solid var(--rub); }
-
-#zapisnik { margin: 0; padding: 0; list-style: none; font-family: ui-monospace, Consolas, monospace; font-size: 0.85rem; max-height: 240px; overflow-y: auto; }
-#zapisnik .ok { color: var(--ok); }
-#zapisnik .greska { color: var(--greska); }
+#poruka {
+  color: red;
+}

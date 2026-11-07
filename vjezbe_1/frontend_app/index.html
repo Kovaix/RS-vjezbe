@@ -1,46 +1,28 @@
 <!DOCTYPE html>
 <html lang="hr">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Restoran – RS Vježba 1</title>
-  <link rel="stylesheet" href="style.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restoran</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header>
-    <h1>Restoran „Kod Raspodijeljenih"</h1>
-    <p class="podnaslov">Raspodijeljeni sustavi – Vježba 1 · klijent (ovaj frontend) ↔ poslužitelj (FastAPI na Renderu)</p>
-    <p id="status-api" class="status">Provjeravam vezu s poslužiteljem…</p>
-  </header>
+  <h1>Restoran</h1>
+  <p id="poruka"></p>
 
-  <main>
-    <section>
-      <div class="naslov-sekcije">
-        <h2>Jelovnik</h2>
-        <select id="filter-kategorija">
-          <option value="">Sve kategorije</option>
-          <option value="predjelo">Predjela</option>
-          <option value="glavno jelo">Glavna jela</option>
-          <option value="desert">Deserti</option>
-        </select>
-      </div>
-      <ul id="jelovnik" class="lista"></ul>
-    </section>
+  <h2>Jela</h2>
+  <ul id="jela"></ul>
 
-    <section>
-      <h2>Narudžbe</h2>
-      <ul id="narudzbe" class="lista"></ul>
-    </section>
+  <h2>Nova narudžba</h2>
+  <form id="forma">
+    <select id="jelo"></select>
+    <input type="number" id="kolicina" value="1" min="1">
+    <button type="submit">Naruči</button>
+  </form>
 
-    <section>
-      <h2>Zapisnik HTTP zahtjeva</h2>
-      <p class="pomoc">Svaki zahtjev koji ovaj klijent pošalje poslužitelju i status koji dobije natrag.</p>
-      <ul id="zapisnik"></ul>
-    </section>
-  </main>
+  <h2>Narudžbe</h2>
+  <ul id="narudzbe"></ul>
 
-  <!-- config.js mora biti prije app.js jer app.js koristi API_URL -->
-  <script src="config.js"></script>
-  <script src="app.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>
